@@ -24,3 +24,8 @@ let products = [
         count: 3,
     },
 ]
+//// 3. Tìm các sản phẩm của thuơng hiệu "Apple"
+const findByBrand = (products, brandName) => {
+    return products.filter(product => product.brand === brandName);
+}
+console.log(findByBrand(products, "Apple"));
